@@ -8,9 +8,15 @@
     {% else %}
         <title>JohoGen</title>
     {% endif %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
+    <nav class = "nav-bar" style = "height: 60px; opacity: 1;">
+        <img src = "./Logo.png" alt = "JohoGen's Logo">
+        <div class = "navbar-links" style = "opacity: 1;">
+            <a class="navbar-link" href="/about">About</a>
+            <a class="navbar-link" href="https://www.linkedin.com/in/brandonc2025/">LinkedIn</a>
+        </div>
+    </nav>
     {% block content %} {% endblock %}
 </body>
 </html>
