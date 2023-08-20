@@ -1,5 +1,5 @@
 import requests
 
-response = requests.get("https://japan-api.ninja/api/v1/")
+response = requests.get("https://api.countrystatecity.in/v1/countries")
 
 print(response.status_code)
