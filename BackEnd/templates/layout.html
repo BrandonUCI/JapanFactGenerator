@@ -10,9 +10,10 @@
     {% endif %}
 </head>
 <body>
-    <nav class = "nav-bar" style = "height: 60px; opacity: 1;">
-        <img src = "./Logo.png" alt = "JohoGen's Logo">
-        <div class = "navbar-links" style = "opacity: 1;">
+    <nav class = "nav-bar" style = "height: 100px; opacity: 1; display: flex; align-items: center; justify-content: space-between; background-color: #2D2E44;">
+        <img src = "{{ url_for('static', filename='Logo.png') }}" alt = "JohoGen's Logo", style = "height: 80px">
+        
+        <div class = "navbar-links" style = "opacity: 1; color: white;">
             <a class="navbar-link" href="/about">About</a>
             <a class="navbar-link" href="https://www.linkedin.com/in/brandonc2025/">LinkedIn</a>
         </div>
