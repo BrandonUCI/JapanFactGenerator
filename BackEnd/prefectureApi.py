@@ -1,4 +1,5 @@
 import requests
+import apiKeys
 
 def apiCall()->list:
     """ Makes a call to the API and returns a list of prefecture dictionaries.
@@ -9,7 +10,7 @@ def apiCall()->list:
     url = "https://api.countrystatecity.in/v1/countries/JP/states"
 
     # API Key
-    headers = {'X-CSCAPI-KEY': 'aW4zVHd1WkFuTWcyWURQRnpvTTgxTFU5d05sV3VLdzhhbGxpWEk4YQ=='}
+    headers = {'X-CSCAPI-KEY': apiKeys.getJpAPIKey()}
 
     # API call request
     response = requests.request("GET", url, headers=headers)
